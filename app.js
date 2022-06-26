@@ -3,7 +3,7 @@ const app = express()
 const path = require('path')
 const port = 3030
 
-app.use(express.static('public'));
+app.use(express.static('public')); //todas los recursos estaticos estan en public, osea que por defecto definimos esto
 
 
 app.get ('/', (req,res) => res.sendFile(path.join(__dirname,'views','index.html')))
